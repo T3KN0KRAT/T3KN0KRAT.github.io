@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "The Blog"
 title_separator          : "-"
 name                     : "T3KN0KR@"
-description              : "Simply Awesome."
+description              : "Simply Filled with Awesome."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
