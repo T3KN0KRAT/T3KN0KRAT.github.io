@@ -5,21 +5,21 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-# Site Settings
+#{{{ Site Settings
 locale                   : "en-US"
 title                    : "The Blog"
 title_separator          : "-"
 name                     : "T3KN0KR@"
-description              : "Simply Filled with Awesome."
+description              : "Filled with two cups of Awesome."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 logo                     : /images/T3KN0KRAT.svg
 comments:
-
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   facebook:
@@ -27,14 +27,18 @@ comments:
     appid                :
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
+#}}}
 
-# SEO Related
+
+#{{{ SEO Related
 google_site_verification :
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
+#}}}
 
-# Social Sharing
+
+#{{{ Social Sharing
 twitter:
   username               :
 facebook:
@@ -49,19 +53,24 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+#}}}
 
-# Analytics
+
+#{{{ Analytics
 analytics:
   provider               : false # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          :
+#}}}
 
-# Google AdSense
+
+#{{{ Google AdSense
 google_ad_client         :
 google_ad_slot           :
+#}}}
 
 
-# Site Author
+#{{{ Site Author
 author:
   name             : "T3KN0KRAT"
   # avatar           : "bio-photo.jpg"
@@ -92,9 +101,10 @@ author:
   weibo            :
   xing             :
   youtube          :
+#}}}
 
 
-# Reading Files
+#{{{ Reading Files
 include:
   - .htaccess
   - _pages
@@ -127,53 +137,60 @@ keep_files:
   - .svn
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+#}}}
 
 
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
+#{{{ Conversion
+markdown:          kramdown
+highlighter:       rouge
+lsi:               false
 excerpt_separator: "\n\n"
-incremental: false
+incremental:       false
+#}}}
 
 
-# Markdown Processing
+#{{{ Markdown Processing
 kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  input:          GFM
+  hard_wrap:      false
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
+#}}}
 
 
-# Outputting
+#{{{ Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+#}}}
 
 
-# Plugins
+#{{{ Plugins
 gems:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jemoji
+#}}}
 
-# mimic GitHub Pages with --safe
+
+#{{{ mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jemoji
+#}}}
 
 
-# Archives
+#{{{ Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
 #  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
@@ -200,11 +217,27 @@ tags:
 #   permalinks:
 #     category: /categories/:name/
 #     tag: /tags/:name/
+#}}}
 
 
-# HTML Compression
+#{{{ HTML Compression
 # - http://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
     envs: development
+#}}}
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+
