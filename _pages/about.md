@@ -9,7 +9,7 @@ author_profile: true
 
 *******************************************************************************
 
-* Systems Adminstrator Veteran
+* Systems Adminstrator
 * Programmer
 * DBA
 * Technical Project Manager
